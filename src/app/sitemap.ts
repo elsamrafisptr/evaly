@@ -49,7 +49,7 @@ const ROUTE_CONFIGS: Record<
   },
   "/pricing": {
     changeFrequency: "monthly",
-    priority: 0.9,
+    priority: 0.75,
   },
 };
 

@@ -523,5 +523,10 @@
   "ComingSoonPage": {
     "title": "Coming Soon!",
     "backToHome": "Back to Home"
+  },
+  "Manifest": {
+    "name": "Evaly | Making Online Exams Easy, Secure, and Smart",
+    "shortName": "Evaly",
+    "description": "Evaly is open source education platform that create, distribute, and analyze tests with ease. Perfect for educational institutions and businesses."
   }
 }
