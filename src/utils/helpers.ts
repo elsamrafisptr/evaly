@@ -26,3 +26,16 @@ export const getI18nPath = (url: string, locale: string) => {
 
   return `/${locale}${url}`;
 };
+
+export const SITE_URL = getBaseUrl().replace(/\/+$/, "");
+export const DEFAULT_IMAGE = `${SITE_URL}/images/og-default.png`;
+export const DEFAULT_TWITTER_IMAGE = `${SITE_URL}/images/twitter-default.png`;
+
+export function makeAlternates(path: string) {
+  return {
+    canonical: `${SITE_URL}${path}`,
+    languages: Object.fromEntries(
+      routing.locales.map((locale) => [locale, `${SITE_URL}/${locale}${path}`])
+    ),
+  };
+}
